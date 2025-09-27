@@ -18,7 +18,7 @@ const config: QuartzConfig = {
       host: "https://eu.umami.is",
     },
     locale: "ru-RU",
-    baseUrl: "https://uthunderbir.github.io/quartz-blog",
+    baseUrl: "https://uthunderbird.github.io/quartz-blog",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "published",
     theme: {
