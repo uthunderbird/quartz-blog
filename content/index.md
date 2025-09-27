@@ -5,6 +5,8 @@ description: "A personal blog built with Quartz"
 
 # Welcome to My Blog
 
+Haha, test
+
 This is my personal blog built with [Quartz](https://quartz.jzhao.xyz/), a fast, batteries-included static-site generator.
 
 ## About This Blog
