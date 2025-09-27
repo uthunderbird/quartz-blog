@@ -3,48 +3,48 @@
  */
 
 main {
-  /* Syntax highlighting - Terminal-inspired colors */
+  /* Syntax highlighting - Balanced terminal colors */
   --color-prettylights-syntax-comment: #6b7c93; /* --secondary - muted for comments */
-  --color-prettylights-syntax-constant: #d4af37; /* --tertiary - gold for constants */
-  --color-prettylights-syntax-entity: #d4af37; /* --tertiary - gold for entities */
+  --color-prettylights-syntax-constant: #d4af37; /* --tertiary - gold for constants only */
+  --color-prettylights-syntax-entity: #d4d4d4; /* --darkgray - neutral for entities */
   --color-prettylights-syntax-storage-modifier-import: #ebebec; /* --dark - bright for imports */
-  --color-prettylights-syntax-entity-tag: #d4af37; /* --tertiary - gold for tags */
-  --color-prettylights-syntax-keyword: #d4af37; /* --tertiary - gold for keywords */
-  --color-prettylights-syntax-string: #d4af37; /* --tertiary - gold for strings */
-  --color-prettylights-syntax-variable: #d4d4d4; /* --darkgray - muted for variables */
-  --color-prettylights-syntax-brackethighlighter-unmatched: #d4af37; /* --tertiary - gold for brackets */
+  --color-prettylights-syntax-entity-tag: #d4d4d4; /* --darkgray - neutral for tags */
+  --color-prettylights-syntax-keyword: #d4af37; /* --tertiary - gold for keywords only */
+  --color-prettylights-syntax-string: #d4d4d4; /* --darkgray - neutral for strings */
+  --color-prettylights-syntax-variable: #d4d4d4; /* --darkgray - neutral for variables */
+  --color-prettylights-syntax-brackethighlighter-unmatched: #6b7c93; /* --secondary - muted for brackets */
   --color-prettylights-syntax-invalid-illegal-text: #ebebec; /* --dark - bright for errors */
   --color-prettylights-syntax-invalid-illegal-bg: #393639; /* --lightgray - dark background */
   --color-prettylights-syntax-carriage-return-text: #ebebec; /* --dark - bright text */
   --color-prettylights-syntax-carriage-return-bg: #393639; /* --lightgray - dark background */
-  --color-prettylights-syntax-string-regexp: #d4af37; /* --tertiary - gold for regex */
-  --color-prettylights-syntax-markup-list: #d4af37; /* --tertiary - gold for lists */
-  --color-prettylights-syntax-markup-heading: #d4af37; /* --tertiary - gold for headings */
+  --color-prettylights-syntax-string-regexp: #d4d4d4; /* --darkgray - neutral for regex */
+  --color-prettylights-syntax-markup-list: #d4d4d4; /* --darkgray - neutral for lists */
+  --color-prettylights-syntax-markup-heading: #ebebec; /* --dark - bright for headings */
   --color-prettylights-syntax-markup-italic: #d4d4d4; /* --darkgray - muted for italic */
   --color-prettylights-syntax-markup-bold: #ebebec; /* --dark - bright for bold */
   --color-prettylights-syntax-markup-deleted-text: #d4d4d4; /* --darkgray - muted for deleted */
   --color-prettylights-syntax-markup-deleted-bg: #393639; /* --lightgray - dark background */
-  --color-prettylights-syntax-markup-inserted-text: #d4af37; /* --tertiary - gold for inserted */
+  --color-prettylights-syntax-markup-inserted-text: #d4d4d4; /* --darkgray - neutral for inserted */
   --color-prettylights-syntax-markup-inserted-bg: #393639; /* --lightgray - dark background */
-  --color-prettylights-syntax-markup-changed-text: #d4af37; /* --tertiary - gold for changed */
+  --color-prettylights-syntax-markup-changed-text: #d4d4d4; /* --darkgray - neutral for changed */
   --color-prettylights-syntax-markup-changed-bg: #393639; /* --lightgray - dark background */
   --color-prettylights-syntax-markup-ignored-text: #6b7c93; /* --secondary - muted for ignored */
   --color-prettylights-syntax-markup-ignored-bg: #1a1a1a; /* --light - dark background */
-  --color-prettylights-syntax-meta-diff-range: #d4af37; /* --tertiary - gold for meta */
+  --color-prettylights-syntax-meta-diff-range: #6b7c93; /* --secondary - muted for meta */
   --color-prettylights-syntax-brackethighlighter-angle: #6b7c93; /* --secondary - muted for angles */
   --color-prettylights-syntax-sublimelinter-gutter-mark: #646464; /* --gray - muted for gutter */
-  --color-prettylights-syntax-constant-other-reference-link: #d4af37; /* --tertiary - gold for links */
+  --color-prettylights-syntax-constant-other-reference-link: #6b7c93; /* --secondary - muted for links */
 
   /* Button styling - Harmonized with site theme */
   --color-btn-text: #ebebec; /* --dark - bright text for buttons */
   --color-btn-bg: #1a1a1a; /* --light - site background */
-  --color-btn-border: rgba(212, 175, 55, 0.2); /* --tertiary with transparency */
+  --color-btn-border: #646464; /* --gray - neutral border */
   --color-btn-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  --color-btn-inset-shadow: inset 0 1px 0 rgba(212, 175, 55, 0.1);
+  --color-btn-inset-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
   --color-btn-hover-bg: #393639; /* --lightgray - hover background */
-  --color-btn-hover-border: #d4af37; /* --tertiary - gold border on hover */
+  --color-btn-hover-border: #6b7c93; /* --secondary - subtle border on hover */
   --color-btn-active-bg: #393639; /* --lightgray - active background */
-  --color-btn-active-border: #d4af37; /* --tertiary - gold border when active */
+  --color-btn-active-border: #6b7c93; /* --secondary - subtle border when active */
   --color-btn-selected-bg: #393639; /* --lightgray - selected background */
   
   /* Primary button - Gold accent for important actions */
@@ -89,23 +89,23 @@ main {
   --color-accent-muted: rgba(212, 175, 55, 0.3); /* --tertiary with transparency */
   --color-accent-subtle: rgba(212, 175, 55, 0.1); /* --tertiary with low transparency */
 
-  /* Status colors - Terminal-inspired */
-  --color-success-fg: #d4af37; /* --tertiary - gold for success */
-  --color-attention-fg: #d4af37; /* --tertiary - gold for attention */
-  --color-attention-muted: rgba(212, 175, 55, 0.3); /* --tertiary with transparency */
-  --color-attention-subtle: rgba(212, 175, 55, 0.1); /* --tertiary with low transparency */
-  --color-danger-fg: #d4af37; /* --tertiary - gold for danger (consistent theme) */
-  --color-danger-muted: rgba(212, 175, 55, 0.3); /* --tertiary with transparency */
-  --color-danger-subtle: rgba(212, 175, 55, 0.1); /* --tertiary with low transparency */
+  /* Status colors - Balanced approach */
+  --color-success-fg: #d4af37; /* --tertiary - gold for success (keep for positive feedback) */
+  --color-attention-fg: #6b7c93; /* --secondary - neutral for attention */
+  --color-attention-muted: rgba(107, 124, 147, 0.3); /* --secondary with transparency */
+  --color-attention-subtle: rgba(107, 124, 147, 0.1); /* --secondary with low transparency */
+  --color-danger-fg: #d4d4d4; /* --darkgray - neutral for danger */
+  --color-danger-muted: rgba(212, 212, 212, 0.3); /* --darkgray with transparency */
+  --color-danger-subtle: rgba(212, 212, 212, 0.1); /* --darkgray with low transparency */
 
   /* Shadow and depth */
   --color-primer-shadow-inset: inset 0 1px 0 rgba(212, 175, 55, 0.1);
   --color-scale-gray-7: #393639; /* --lightgray - scale reference */
   --color-scale-blue-8: #1a1a1a; /* --light - scale reference */
 
-  /* Social reactions - Gold theme */
-  --color-social-reaction-bg-hover: rgba(212, 175, 55, 0.1); /* --tertiary with transparency */
-  --color-social-reaction-bg-reacted-hover: rgba(212, 175, 55, 0.2); /* --tertiary with more transparency */
+  /* Social reactions - Balanced theme */
+  --color-social-reaction-bg-hover: rgba(107, 124, 147, 0.1); /* --secondary with transparency */
+  --color-social-reaction-bg-reacted-hover: rgba(107, 124, 147, 0.2); /* --secondary with more transparency */
 }
 
 /* Enhanced styling for premium developer aesthetic */
@@ -124,16 +124,16 @@ main {
 /* Terminal-inspired styling for comment areas */
 main .gsc-comment-box {
   background: linear-gradient(135deg, #1a1a1a 0%, #393639 100%);
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  border: 1px solid #646464;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 
-              inset 0 1px 0 rgba(212, 175, 55, 0.1);
+              inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 /* Enhanced button styling with premium effects */
 main .gsc-button {
   background: linear-gradient(135deg, #1a1a1a 0%, #393639 100%);
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  border: 1px solid #646464;
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease;
@@ -148,7 +148,7 @@ main .gsc-button::before {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(107, 124, 147, 0.2), transparent);
   transition: left 0.5s ease;
 }
 
@@ -157,8 +157,8 @@ main .gsc-button:hover::before {
 }
 
 main .gsc-button:hover {
-  border-color: #d4af37;
-  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+  border-color: #6b7c93;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transform: translateY(-1px);
 }
 
@@ -181,7 +181,7 @@ main .gsc-button-primary:hover {
 /* Comment styling with terminal aesthetics */
 main .gsc-comment {
   background: linear-gradient(135deg, #1a1a1a 0%, #1f1f1f 100%);
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid #646464;
   border-radius: 8px;
   margin: 8px 0;
   padding: 16px;
@@ -190,7 +190,7 @@ main .gsc-comment {
 }
 
 main .gsc-comment:hover {
-  border-color: rgba(212, 175, 55, 0.4);
+  border-color: #6b7c93;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -209,30 +209,30 @@ main .gsc-timestamp {
 
 /* Reaction buttons with premium styling */
 main .gsc-reaction-button {
-  background: rgba(212, 175, 55, 0.1);
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  background: rgba(107, 124, 147, 0.1);
+  border: 1px solid rgba(107, 124, 147, 0.3);
   border-radius: 4px;
   transition: all 0.2s ease;
 }
 
 main .gsc-reaction-button:hover {
-  background: rgba(212, 175, 55, 0.2);
-  border-color: #d4af37;
+  background: rgba(107, 124, 147, 0.2);
+  border-color: #6b7c93;
   transform: scale(1.05);
 }
 
 /* Input field styling */
 main .gsc-input {
   background: linear-gradient(135deg, #1a1a1a 0%, #393639 100%);
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  border: 1px solid #646464;
   border-radius: 6px;
   color: #ebebec;
   transition: all 0.3s ease;
 }
 
 main .gsc-input:focus {
-  border-color: #d4af37;
-  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+  border-color: #6b7c93;
+  box-shadow: 0 0 0 2px rgba(107, 124, 147, 0.2);
   outline: none;
 }
 
@@ -262,22 +262,22 @@ main ::-webkit-scrollbar-track {
 }
 
 main ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+  background: linear-gradient(135deg, #6b7c93 0%, #646464 100%);
   border-radius: 4px;
   border: 1px solid #1a1a1a;
 }
 
 main ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #b8941f 0%, #d4af37 100%);
+  background: linear-gradient(135deg, #646464 0%, #6b7c93 100%);
 }
 
 /* Selection styling */
 main ::selection {
-  background: rgba(212, 175, 55, 0.3);
+  background: rgba(107, 124, 147, 0.3);
   color: #ebebec;
 }
 
 main ::-moz-selection {
-  background: rgba(212, 175, 55, 0.3);
+  background: rgba(107, 124, 147, 0.3);
   color: #ebebec;
 }
