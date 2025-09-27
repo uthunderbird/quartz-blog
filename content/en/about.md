@@ -75,4 +75,4 @@ I'm always interested in connecting with fellow creators, philosophers, and tech
 
 *This blog represents my ongoing journey of self-discovery, creative expression, and intellectual growth. Thank you for being part of this exploration.*
 
-*Built with Quartz v4.5.2*
+*Built with [Quartz](https://quartz.jzhao.xyz/)*
