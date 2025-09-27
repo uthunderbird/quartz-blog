@@ -1,28 +1,24 @@
 ---
-title: "Welcome to My Blog"
-description: "A personal blog built with Quartz"
+title: "Сад Данияра"
+description: "Публичный цифровой сад Данияра Супиева"
 ---
 
-# Welcome to My Blog
+# Сад Данияра
 
-Haha, test
+Удивительно, но у меня никогда не было хомяка. И обсидиан я никогда не вёл. Теперь, когда я наконец-то начал чувствовать, что не справляюсь с бесконечным щитштормом новой информации, я решил облагородить какой-то кусочек инетрнета под себя. Соберу сюда старые материалы, не утратившие актуальности. Буду постить новые по мере накопления.
 
-This is my personal blog built with [Quartz](https://quartz.jzhao.xyz/), a fast, batteries-included static-site generator.
+Опыт показывает, что мне категорически нельзя ограничивать тему, так что я и не буду этого делать.
 
-## About This Blog
+## О саде
 
-This blog will contain my thoughts, projects, and various writings. I'm using Quartz because it:
-
-- Transforms Markdown content into fully functional websites
-- Provides full-text search and graph view
-- Supports wikilinks, backlinks, and transclusions
-- Offers hot-reload and incremental rebuilds
-- Has a beautiful, customizable interface
-
-## Recent Posts
-
-- [[Welcome to My Blog]] - This post
-- [[Getting Started with Quartz]] - Setup guide
+Карта сада:
+- Философская беседка **TBD**
+- Пик сингулярности **TBD**
+- Художественная панорама **TBD**
+- Системный тупик **TBD**
+- Сцена **TBD**
+- Архив **TBD**
+- [Обо мне](./about.md)
 
 ---
 
