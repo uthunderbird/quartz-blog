@@ -68,7 +68,7 @@ I believe in the power of **responsible freedom** - the ability to express onese
 
 I'm always interested in connecting with fellow creators, philosophers, and technologists who share similar values. Whether you're interested in philosophical discussions, creative collaboration, or technical innovation, I welcome thoughtful dialogue and potential partnerships.
 
-* **E-mail**: [undead.thunderbird@gmail.com](mailto:undead.thunderbird@gmail.com)
+* **E-mail**: `undead.thunderbird [ аt ] gmail.com`
 * **Telegram**: [@underbird](https://t.me/underbird)
 
 ---
