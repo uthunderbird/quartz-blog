@@ -1,99 +1,283 @@
-/*! MIT License
- * Copyright (c) 2018 GitHub Inc.
- * https://github.com/primer/primitives/blob/main/LICENSE
+/*! Custom Giscus Dark Theme - Harmonized with default Quartz dark theme
+ * Based on site's dark theme palette with enhanced contrast and modern styling
  */
 
 main {
-  --color-prettylights-syntax-comment: #8b949e;
-  --color-prettylights-syntax-constant: #79c0ff;
-  --color-prettylights-syntax-entity: #d2a8ff;
-  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
-  --color-prettylights-syntax-entity-tag: #7ee787;
-  --color-prettylights-syntax-keyword: #ff7b72;
-  --color-prettylights-syntax-string: #a5d6ff;
-  --color-prettylights-syntax-variable: #ffa657;
-  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
-  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
-  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
-  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
-  --color-prettylights-syntax-carriage-return-bg: #b62324;
-  --color-prettylights-syntax-string-regexp: #7ee787;
-  --color-prettylights-syntax-markup-list: #f2cc60;
-  --color-prettylights-syntax-markup-heading: #1f6feb;
-  --color-prettylights-syntax-markup-italic: #c9d1d9;
-  --color-prettylights-syntax-markup-bold: #c9d1d9;
-  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
-  --color-prettylights-syntax-markup-deleted-bg: #67060c;
-  --color-prettylights-syntax-markup-inserted-text: #aff5b4;
-  --color-prettylights-syntax-markup-inserted-bg: #033a16;
-  --color-prettylights-syntax-markup-changed-text: #ffdfb6;
-  --color-prettylights-syntax-markup-changed-bg: #5a1e02;
-  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
-  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
-  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
-  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
-  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
-  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
-  --color-btn-text: #d4d4d4; /* --darkgray */
-  --color-btn-bg: #161618; /* --light */
-  --color-btn-border: rgb(240, 246, 252 / 10%); /* --dark */
-  --color-btn-shadow: 0 0 transparent;
-  --color-btn-inset-shadow: 0 0 transparent;
-  --color-btn-hover-bg: #30363d;
-  --color-btn-hover-border: #8b949e;
-  --color-btn-active-bg: hsl(212deg 12% 18% / 100%);
-  --color-btn-active-border: #6e7681;
-  --color-btn-selected-bg: #161b22;
-  --color-btn-primary-text: #fff;
-  --color-btn-primary-bg: #84a59d; /* --tertiary */
-  --color-btn-primary-border: rgb(240, 246, 252 / 10%); /* --dark */
-  --color-btn-primary-shadow: 0 0 transparent;
-  --color-btn-primary-inset-shadow: 0 0 transparent;
-  --color-btn-primary-hover-bg: #7b97aa; /* --secondary */
-  --color-btn-primary-hover-border: rgb(240, 246, 252 / 10%); /* --dark */
-  --color-btn-primary-selected-bg: #7b97aa; /* --secondary */
-  --color-btn-primary-selected-shadow: 0 0 transparent;
-  --color-btn-primary-disabled-text: rgba(33, 32, 32, 0.5);
-  --color-btn-primary-disabled-bg: rgb(35 134 54 / 60%);
-  --color-btn-primary-disabled-border: rgb(240 246 252 / 10%);
-  --color-action-list-item-default-hover-bg: rgb(177 186 196 / 12%);
-  --color-segmented-control-bg: rgb(110 118 129 / 10%);
-  --color-segmented-control-button-bg: #0d1117;
-  --color-segmented-control-button-selected-border: #6e7681;
-  --color-fg-default: #ebebec; /* --dark */
-  --color-fg-muted: #d4d4d4; /* --darkgray */
-  --color-fg-subtle: #d4d4d4; /* --darkgray */
-  --color-canvas-default: #0d1117;
-  --color-canvas-overlay: #161b22;
-  --color-canvas-inset: #010409;
-  --color-canvas-subtle: #161b22;
-  --color-border-default: #30363d;
-  --color-border-muted: #21262d;
-  --color-neutral-muted: rgb(110 118 129 / 40%);
-  --color-accent-fg: #2f81f7;
-  --color-accent-emphasis: #1f6feb;
-  --color-accent-muted: rgb(56 139 253 / 40%);
-  --color-accent-subtle: rgb(56 139 253 / 10%);
-  --color-success-fg: #3fb950;
-  --color-attention-fg: #d29922;
-  --color-attention-muted: rgb(187 128 9 / 40%);
-  --color-attention-subtle: rgb(187 128 9 / 15%);
-  --color-danger-fg: #f85149;
-  --color-danger-muted: rgb(248 81 73 / 40%);
-  --color-danger-subtle: rgb(248 81 73 / 10%);
-  --color-primer-shadow-inset: 0 0 transparent;
-  --color-scale-gray-7: #21262d;
-  --color-scale-blue-8: #0c2d6b;
+  /* Syntax highlighting - Terminal-inspired colors */
+  --color-prettylights-syntax-comment: #6b7c93; /* --secondary - muted for comments */
+  --color-prettylights-syntax-constant: #d4af37; /* --tertiary - gold for constants */
+  --color-prettylights-syntax-entity: #d4af37; /* --tertiary - gold for entities */
+  --color-prettylights-syntax-storage-modifier-import: #ebebec; /* --dark - bright for imports */
+  --color-prettylights-syntax-entity-tag: #d4af37; /* --tertiary - gold for tags */
+  --color-prettylights-syntax-keyword: #d4af37; /* --tertiary - gold for keywords */
+  --color-prettylights-syntax-string: #d4af37; /* --tertiary - gold for strings */
+  --color-prettylights-syntax-variable: #d4d4d4; /* --darkgray - muted for variables */
+  --color-prettylights-syntax-brackethighlighter-unmatched: #d4af37; /* --tertiary - gold for brackets */
+  --color-prettylights-syntax-invalid-illegal-text: #ebebec; /* --dark - bright for errors */
+  --color-prettylights-syntax-invalid-illegal-bg: #393639; /* --lightgray - dark background */
+  --color-prettylights-syntax-carriage-return-text: #ebebec; /* --dark - bright text */
+  --color-prettylights-syntax-carriage-return-bg: #393639; /* --lightgray - dark background */
+  --color-prettylights-syntax-string-regexp: #d4af37; /* --tertiary - gold for regex */
+  --color-prettylights-syntax-markup-list: #d4af37; /* --tertiary - gold for lists */
+  --color-prettylights-syntax-markup-heading: #d4af37; /* --tertiary - gold for headings */
+  --color-prettylights-syntax-markup-italic: #d4d4d4; /* --darkgray - muted for italic */
+  --color-prettylights-syntax-markup-bold: #ebebec; /* --dark - bright for bold */
+  --color-prettylights-syntax-markup-deleted-text: #d4d4d4; /* --darkgray - muted for deleted */
+  --color-prettylights-syntax-markup-deleted-bg: #393639; /* --lightgray - dark background */
+  --color-prettylights-syntax-markup-inserted-text: #d4af37; /* --tertiary - gold for inserted */
+  --color-prettylights-syntax-markup-inserted-bg: #393639; /* --lightgray - dark background */
+  --color-prettylights-syntax-markup-changed-text: #d4af37; /* --tertiary - gold for changed */
+  --color-prettylights-syntax-markup-changed-bg: #393639; /* --lightgray - dark background */
+  --color-prettylights-syntax-markup-ignored-text: #6b7c93; /* --secondary - muted for ignored */
+  --color-prettylights-syntax-markup-ignored-bg: #1a1a1a; /* --light - dark background */
+  --color-prettylights-syntax-meta-diff-range: #d4af37; /* --tertiary - gold for meta */
+  --color-prettylights-syntax-brackethighlighter-angle: #6b7c93; /* --secondary - muted for angles */
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #646464; /* --gray - muted for gutter */
+  --color-prettylights-syntax-constant-other-reference-link: #d4af37; /* --tertiary - gold for links */
 
-  /*! Extensions from @primer/css/alerts/flash.scss */
-  --color-social-reaction-bg-hover: var(--color-scale-gray-7);
-  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
+  /* Button styling - Harmonized with site theme */
+  --color-btn-text: #ebebec; /* --dark - bright text for buttons */
+  --color-btn-bg: #1a1a1a; /* --light - site background */
+  --color-btn-border: rgba(212, 175, 55, 0.2); /* --tertiary with transparency */
+  --color-btn-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --color-btn-inset-shadow: inset 0 1px 0 rgba(212, 175, 55, 0.1);
+  --color-btn-hover-bg: #393639; /* --lightgray - hover background */
+  --color-btn-hover-border: #d4af37; /* --tertiary - gold border on hover */
+  --color-btn-active-bg: #393639; /* --lightgray - active background */
+  --color-btn-active-border: #d4af37; /* --tertiary - gold border when active */
+  --color-btn-selected-bg: #393639; /* --lightgray - selected background */
+  
+  /* Primary button - Gold accent for important actions */
+  --color-btn-primary-text: #1a1a1a; /* --light - dark text on gold */
+  --color-btn-primary-bg: #d4af37; /* --tertiary - gold background */
+  --color-btn-primary-border: #d4af37; /* --tertiary - gold border */
+  --color-btn-primary-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
+  --color-btn-primary-inset-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  --color-btn-primary-hover-bg: #b8941f; /* Darker gold on hover */
+  --color-btn-primary-hover-border: #b8941f; /* Darker gold border */
+  --color-btn-primary-selected-bg: #b8941f; /* Darker gold when selected */
+  --color-btn-primary-selected-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  --color-btn-primary-disabled-text: #646464; /* --gray - muted for disabled */
+  --color-btn-primary-disabled-bg: #393639; /* --lightgray - muted background */
+  --color-btn-primary-disabled-border: #646464; /* --gray - muted border */
+
+  /* Interactive elements */
+  --color-action-list-item-default-hover-bg: rgba(212, 175, 55, 0.1); /* --tertiary with transparency */
+  --color-segmented-control-bg: #393639; /* --lightgray - control background */
+  --color-segmented-control-button-bg: #1a1a1a; /* --light - button background */
+  --color-segmented-control-button-selected-border: #d4af37; /* --tertiary - gold border */
+
+  /* Text colors - Harmonized with site theme */
+  --color-fg-default: #ebebec; /* --dark - primary text */
+  --color-fg-muted: #d4d4d4; /* --darkgray - secondary text */
+  --color-fg-subtle: #6b7c93; /* --secondary - subtle text */
+
+  /* Canvas/Background colors - Site theme integration */
+  --color-canvas-default: #1a1a1a; /* --light - main background */
+  --color-canvas-overlay: #393639; /* --lightgray - overlay background */
+  --color-canvas-inset: #1a1a1a; /* --light - inset background */
+  --color-canvas-subtle: #393639; /* --lightgray - subtle background */
+
+  /* Border colors - Subtle and harmonious */
+  --color-border-default: #646464; /* --gray - default borders */
+  --color-border-muted: #393639; /* --lightgray - muted borders */
+  --color-neutral-muted: rgba(107, 124, 147, 0.2); /* --secondary with transparency */
+
+  /* Accent colors - Gold theme for highlights */
+  --color-accent-fg: #d4af37; /* --tertiary - gold accent */
+  --color-accent-emphasis: #d4af37; /* --tertiary - gold emphasis */
+  --color-accent-muted: rgba(212, 175, 55, 0.3); /* --tertiary with transparency */
+  --color-accent-subtle: rgba(212, 175, 55, 0.1); /* --tertiary with low transparency */
+
+  /* Status colors - Terminal-inspired */
+  --color-success-fg: #d4af37; /* --tertiary - gold for success */
+  --color-attention-fg: #d4af37; /* --tertiary - gold for attention */
+  --color-attention-muted: rgba(212, 175, 55, 0.3); /* --tertiary with transparency */
+  --color-attention-subtle: rgba(212, 175, 55, 0.1); /* --tertiary with low transparency */
+  --color-danger-fg: #d4af37; /* --tertiary - gold for danger (consistent theme) */
+  --color-danger-muted: rgba(212, 175, 55, 0.3); /* --tertiary with transparency */
+  --color-danger-subtle: rgba(212, 175, 55, 0.1); /* --tertiary with low transparency */
+
+  /* Shadow and depth */
+  --color-primer-shadow-inset: inset 0 1px 0 rgba(212, 175, 55, 0.1);
+  --color-scale-gray-7: #393639; /* --lightgray - scale reference */
+  --color-scale-blue-8: #1a1a1a; /* --light - scale reference */
+
+  /* Social reactions - Gold theme */
+  --color-social-reaction-bg-hover: rgba(212, 175, 55, 0.1); /* --tertiary with transparency */
+  --color-social-reaction-bg-reacted-hover: rgba(212, 175, 55, 0.2); /* --tertiary with more transparency */
 }
 
+/* Enhanced styling for premium developer aesthetic */
+main {
+  /* Add subtle gradient backgrounds for depth */
+  background: linear-gradient(135deg, #1a1a1a 0%, #1f1f1f 100%);
+  
+  /* Enhanced shadows for depth */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 
+              0 0 0 1px rgba(212, 175, 55, 0.1);
+  
+  /* Smooth transitions for all interactive elements */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Terminal-inspired styling for comment areas */
+main .gsc-comment-box {
+  background: linear-gradient(135deg, #1a1a1a 0%, #393639 100%);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 
+              inset 0 1px 0 rgba(212, 175, 55, 0.1);
+}
+
+/* Enhanced button styling with premium effects */
+main .gsc-button {
+  background: linear-gradient(135deg, #1a1a1a 0%, #393639 100%);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+main .gsc-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+main .gsc-button:hover::before {
+  left: 100%;
+}
+
+main .gsc-button:hover {
+  border-color: #d4af37;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Primary button enhanced styling */
+main .gsc-button-primary {
+  background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+  border: 1px solid #d4af37;
+  color: #1a1a1a;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+}
+
+main .gsc-button-primary:hover {
+  background: linear-gradient(135deg, #b8941f 0%, #d4af37 100%);
+  box-shadow: 0 6px 16px rgba(212, 175, 55, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Comment styling with terminal aesthetics */
+main .gsc-comment {
+  background: linear-gradient(135deg, #1a1a1a 0%, #1f1f1f 100%);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 8px;
+  margin: 8px 0;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+main .gsc-comment:hover {
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Username styling with terminal look */
+main .gsc-username {
+  color: #d4af37;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Timestamp styling */
+main .gsc-timestamp {
+  color: #6b7c93;
+  font-size: 0.9em;
+}
+
+/* Reaction buttons with premium styling */
+main .gsc-reaction-button {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+main .gsc-reaction-button:hover {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: #d4af37;
+  transform: scale(1.05);
+}
+
+/* Input field styling */
+main .gsc-input {
+  background: linear-gradient(135deg, #1a1a1a 0%, #393639 100%);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 6px;
+  color: #ebebec;
+  transition: all 0.3s ease;
+}
+
+main .gsc-input:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+  outline: none;
+}
+
+/* Loading animations */
 main .pagination-loader-container {
   background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 main .gsc-loading-image {
   background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Scrollbar styling for terminal look */
+main ::-webkit-scrollbar {
+  width: 8px;
+}
+
+main ::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+main ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+  border-radius: 4px;
+  border: 1px solid #1a1a1a;
+}
+
+main ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #b8941f 0%, #d4af37 100%);
+}
+
+/* Selection styling */
+main ::selection {
+  background: rgba(212, 175, 55, 0.3);
+  color: #ebebec;
+}
+
+main ::-moz-selection {
+  background: rgba(212, 175, 55, 0.3);
+  color: #ebebec;
 }
