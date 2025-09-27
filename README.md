@@ -1,18 +1,57 @@
-# Quartz v4
+# My Blog
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+A personal blog built with [Quartz](https://quartz.jzhao.xyz/), a fast, batteries-included static-site generator.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+## Features
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+- 🔍 **Full-text search** - Find content quickly
+- 🕸️ **Graph view** - Visualize connections between notes
+- 🔗 **Wikilinks** - Link between pages using `[[page name]]`
+- 📱 **Responsive design** - Works on all devices
+- 🌙 **Dark mode** - Toggle between light and dark themes
+- ⚡ **Fast loading** - Optimized for performance
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+## Getting Started
 
-## Sponsors
+### Development
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+To start the development server:
+
+```bash
+npm run dev
+```
+
+The blog will be available at `http://localhost:8080`
+
+### Building
+
+To build for production:
+
+```bash
+npm run build
+```
+
+### Content
+
+All content is stored in the `content/` directory as Markdown files. Use wikilinks (`[[page name]]`) to create connections between pages.
+
+## Content Structure
+
+- `content/index.md` - Homepage
+- `content/about.md` - About page
+- `content/getting-started-with-quartz.md` - Setup guide
+
+## Customization
+
+- `quartz.config.ts` - Main configuration
+- `quartz.layout.ts` - Layout customization
+- `content/` - Your blog content
+
+## Learn More
+
+- [Quartz Documentation](https://quartz.jzhao.xyz/)
+- [Quartz GitHub Repository](https://github.com/jackyzha0/quartz)
+
+---
+
+*Built with Quartz v4.5.2*
