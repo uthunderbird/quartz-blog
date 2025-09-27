@@ -3,7 +3,7 @@ title: "About"
 description: "Learn more about Daniyar - a multidisciplinary creator, philosopher, and software engineer"
 ---
 
-# About Daniyar
+# About me
 
 Hello! I'm Daniyar, a 33-year-old multidisciplinary creator, philosopher, and software engineer based in Almaty, Kazakhstan. I'm happily married and passionate about exploring the intersections between technology, philosophy, creativity, and human expression.
 
