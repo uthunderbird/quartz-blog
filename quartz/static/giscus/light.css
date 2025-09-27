@@ -1,99 +1,284 @@
-/*! MIT License
- * Copyright (c) 2018 GitHub Inc.
- * https://github.com/primer/primitives/blob/main/LICENSE
+/*! Custom Giscus Light Theme - Enhanced for Excellent Contrast
+ * Harmonized with Quartz Light Theme Palette
+ * Professional styling with optimal readability and accessibility
  */
 
 main {
-  --color-prettylights-syntax-comment: #6e7781;
-  --color-prettylights-syntax-constant: #0550ae;
-  --color-prettylights-syntax-entity: #8250df;
-  --color-prettylights-syntax-storage-modifier-import: #24292f;
-  --color-prettylights-syntax-entity-tag: #116329;
-  --color-prettylights-syntax-keyword: #cf222e;
-  --color-prettylights-syntax-string: #0a3069;
-  --color-prettylights-syntax-variable: #953800;
-  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
-  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
-  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
-  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
-  --color-prettylights-syntax-carriage-return-bg: #cf222e;
-  --color-prettylights-syntax-string-regexp: #116329;
-  --color-prettylights-syntax-markup-list: #3b2300;
-  --color-prettylights-syntax-markup-heading: #0550ae;
-  --color-prettylights-syntax-markup-italic: #24292f;
-  --color-prettylights-syntax-markup-bold: #24292f;
-  --color-prettylights-syntax-markup-deleted-text: #82071e;
-  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
-  --color-prettylights-syntax-markup-inserted-text: #116329;
-  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
-  --color-prettylights-syntax-markup-changed-text: #953800;
-  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
-  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
-  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
-  --color-prettylights-syntax-meta-diff-range: #8250df;
-  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
-  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
-  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
-  --color-btn-text: #4e4e4e; /* --darkgray */
-  --color-btn-bg: #faf8f8; /* --light */
-  --color-btn-border: rgb(43, 43, 43 / 15%); /* --dark */
-  --color-btn-shadow: 0 1px 0 rgb(31 35 40 / 4%);
-  --color-btn-inset-shadow: inset 0 1px 0 rgb(255 255 255 / 25%);
-  --color-btn-hover-bg: #f3f4f6;
-  --color-btn-hover-border: rgb(43, 43, 43 / 15%); /* --dark */
-  --color-btn-active-bg: hsl(220deg 14% 93% / 100%);
-  --color-btn-active-border: rgb(31 35 40 / 15%);
-  --color-btn-selected-bg: hsl(220deg 14% 94% / 100%);
-  --color-btn-primary-text: #fff;
-  --color-btn-primary-bg: #84a59d; /* --tertiary */
-  --color-btn-primary-border: rgb(43, 43, 43 / 15%); /* --dark */
-  --color-btn-primary-shadow: 0 1px 0 rgb(31 35 40 / 10%);
-  --color-btn-primary-inset-shadow: inset 0 1px 0 rgb(255 255 255 / 3%);
-  --color-btn-primary-hover-bg: #284b63; /* --secondary */
-  --color-btn-primary-hover-border: rgb(43, 43, 43 / 15%); /* --dark */
-  --color-btn-primary-selected-bg: #284b63; /* --secondary */
-  --color-btn-primary-selected-shadow: inset 0 1px 0 rgb(0 45 17 / 20%);
-  --color-btn-primary-disabled-text: rgb(255 255 255 / 80%);
-  --color-btn-primary-disabled-bg: #94d3a2;
-  --color-btn-primary-disabled-border: rgb(31 35 40 / 15%);
-  --color-action-list-item-default-hover-bg: rgb(208 215 222 / 32%);
-  --color-segmented-control-bg: #eaeef2;
-  --color-segmented-control-button-bg: #fff;
-  --color-segmented-control-button-selected-border: #8c959f;
-  --color-fg-default: #2b2b2b; /* --dark */
-  --color-fg-muted: #4e4e4e; /* --darkgray */
-  --color-fg-subtle: #4e4e4e; /* --darkgray */
-  --color-canvas-default: #fff;
-  --color-canvas-overlay: #fff;
-  --color-canvas-inset: #f6f8fa;
-  --color-canvas-subtle: #f6f8fa;
-  --color-border-default: #d0d7de;
-  --color-border-muted: hsl(210deg 18% 87% / 100%);
-  --color-neutral-muted: rgb(175 184 193 / 20%);
-  --color-accent-fg: #0969da;
-  --color-accent-emphasis: #0969da;
-  --color-accent-muted: rgb(84 174 255 / 40%);
-  --color-accent-subtle: #ddf4ff;
-  --color-success-fg: #1a7f37;
-  --color-attention-fg: #9a6700;
-  --color-attention-muted: rgb(212 167 44 / 40%);
-  --color-attention-subtle: #fff8c5;
-  --color-danger-fg: #d1242f;
-  --color-danger-muted: rgb(255 129 130 / 40%);
-  --color-danger-subtle: #ffebe9;
-  --color-primer-shadow-inset: inset 0 1px 0 rgb(208 215 222 / 20%);
-  --color-scale-gray-1: #eaeef2;
-  --color-scale-blue-1: #b6e3ff;
+  /* Syntax highlighting - Balanced light theme colors */
+  --color-prettylights-syntax-comment: #6b7c93; /* --secondary - muted for comments */
+  --color-prettylights-syntax-constant: #d4af37; /* --tertiary - gold for constants */
+  --color-prettylights-syntax-entity: #2b2b2b; /* --dark - dark for entities */
+  --color-prettylights-syntax-storage-modifier-import: #2b2b2b; /* --dark - dark for imports */
+  --color-prettylights-syntax-entity-tag: #2b2b2b; /* --dark - dark for tags */
+  --color-prettylights-syntax-keyword: #d4af37; /* --tertiary - gold for keywords */
+  --color-prettylights-syntax-string: #2b2b2b; /* --dark - dark for strings */
+  --color-prettylights-syntax-variable: #4e4e4e; /* --darkgray - muted for variables */
+  --color-prettylights-syntax-brackethighlighter-unmatched: #6b7c93; /* --secondary - muted for brackets */
+  --color-prettylights-syntax-invalid-illegal-text: #2b2b2b; /* --dark - dark for errors */
+  --color-prettylights-syntax-invalid-illegal-bg: #e5e5e5; /* --lightgray - light background */
+  --color-prettylights-syntax-carriage-return-text: #2b2b2b; /* --dark - dark text */
+  --color-prettylights-syntax-carriage-return-bg: #e5e5e5; /* --lightgray - light background */
+  --color-prettylights-syntax-string-regexp: #2b2b2b; /* --dark - dark for regex */
+  --color-prettylights-syntax-markup-list: #2b2b2b; /* --dark - dark for lists */
+  --color-prettylights-syntax-markup-heading: #2b2b2b; /* --dark - dark for headings */
+  --color-prettylights-syntax-markup-italic: #4e4e4e; /* --darkgray - muted for italic */
+  --color-prettylights-syntax-markup-bold: #2b2b2b; /* --dark - dark for bold */
+  --color-prettylights-syntax-markup-deleted-text: #4e4e4e; /* --darkgray - muted for deleted */
+  --color-prettylights-syntax-markup-deleted-bg: #e5e5e5; /* --lightgray - light background */
+  --color-prettylights-syntax-markup-inserted-text: #2b2b2b; /* --dark - dark for inserted */
+  --color-prettylights-syntax-markup-inserted-bg: #e5e5e5; /* --lightgray - light background */
+  --color-prettylights-syntax-markup-changed-text: #2b2b2b; /* --dark - dark for changed */
+  --color-prettylights-syntax-markup-changed-bg: #e5e5e5; /* --lightgray - light background */
+  --color-prettylights-syntax-markup-ignored-text: #6b7c93; /* --secondary - muted for ignored */
+  --color-prettylights-syntax-markup-ignored-bg: #faf9f7; /* --light - light background */
+  --color-prettylights-syntax-meta-diff-range: #6b7c93; /* --secondary - muted for meta */
+  --color-prettylights-syntax-brackethighlighter-angle: #6b7c93; /* --secondary - muted for angles */
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #b8b8b8; /* --gray - muted for gutter */
+  --color-prettylights-syntax-constant-other-reference-link: #6b7c93; /* --secondary - muted for links */
 
-  /*! Extensions from @primer/css/alerts/flash.scss */
-  --color-social-reaction-bg-hover: var(--color-scale-gray-1);
-  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-1);
+  /* Button styling - Enhanced contrast for light theme */
+  --color-btn-text: #2b2b2b; /* --dark - dark text for excellent contrast */
+  --color-btn-bg: #faf9f7; /* --light - site background */
+  --color-btn-border: #e5e5e5; /* --lightgray - subtle border */
+  --color-btn-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --color-btn-inset-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  --color-btn-hover-bg: #e5e5e5; /* --lightgray - hover background */
+  --color-btn-hover-border: #6b7c93; /* --secondary - subtle border on hover */
+  --color-btn-active-bg: #e5e5e5; /* --lightgray - active background */
+  --color-btn-active-border: #6b7c93; /* --secondary - subtle border when active */
+  --color-btn-selected-bg: #e5e5e5; /* --lightgray - selected background */
+  
+  /* Primary button - Gold accent for important actions */
+  --color-btn-primary-text: #2b2b2b; /* --dark - dark text on gold */
+  --color-btn-primary-bg: #d4af37; /* --tertiary - gold background */
+  --color-btn-primary-border: #d4af37; /* --tertiary - gold border */
+  --color-btn-primary-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
+  --color-btn-primary-inset-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  --color-btn-primary-hover-bg: #b8941f; /* Darker gold on hover */
+  --color-btn-primary-hover-border: #b8941f; /* Darker gold border */
+  --color-btn-primary-selected-bg: #b8941f; /* Darker gold when selected */
+  --color-btn-primary-selected-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  --color-btn-primary-disabled-text: #b8b8b8; /* --gray - muted for disabled */
+  --color-btn-primary-disabled-bg: #e5e5e5; /* --lightgray - muted background */
+  --color-btn-primary-disabled-border: #b8b8b8; /* --gray - muted border */
+
+  /* Interactive elements */
+  --color-action-list-item-default-hover-bg: rgba(107, 124, 147, 0.1); /* --secondary with transparency */
+  --color-segmented-control-bg: #e5e5e5; /* --lightgray - control background */
+  --color-segmented-control-button-bg: #faf9f7; /* --light - button background */
+  --color-segmented-control-button-selected-border: #6b7c93; /* --secondary - subtle border */
+
+  /* Text colors - Enhanced contrast for light theme */
+  --color-fg-default: #2b2b2b; /* --dark - primary text with excellent contrast */
+  --color-fg-muted: #4e4e4e; /* --darkgray - secondary text with good contrast */
+  --color-fg-subtle: #6b7c93; /* --secondary - subtle text */
+
+  /* Canvas/Background colors - Site light theme integration */
+  --color-canvas-default: #faf9f7; /* --light - main background */
+  --color-canvas-overlay: #faf9f7; /* --light - overlay background */
+  --color-canvas-inset: #faf9f7; /* --light - inset background */
+  --color-canvas-subtle: #e5e5e5; /* --lightgray - subtle background */
+
+  /* Border colors - Subtle and harmonious */
+  --color-border-default: #e5e5e5; /* --lightgray - default borders */
+  --color-border-muted: #b8b8b8; /* --gray - muted borders */
+  --color-neutral-muted: rgba(107, 124, 147, 0.1); /* --secondary with transparency */
+
+  /* Accent colors - Strategic gold usage */
+  --color-accent-fg: #d4af37; /* --tertiary - gold accent */
+  --color-accent-emphasis: #d4af37; /* --tertiary - gold emphasis */
+  --color-accent-muted: rgba(212, 175, 55, 0.2); /* --tertiary with transparency */
+  --color-accent-subtle: rgba(212, 175, 55, 0.1); /* --tertiary with low transparency */
+
+  /* Status colors - Balanced approach */
+  --color-success-fg: #d4af37; /* --tertiary - gold for success */
+  --color-attention-fg: #6b7c93; /* --secondary - neutral for attention */
+  --color-attention-muted: rgba(107, 124, 147, 0.2); /* --secondary with transparency */
+  --color-attention-subtle: rgba(107, 124, 147, 0.1); /* --secondary with low transparency */
+  --color-danger-fg: #2b2b2b; /* --dark - dark for danger */
+  --color-danger-muted: rgba(43, 43, 43, 0.2); /* --dark with transparency */
+  --color-danger-subtle: rgba(43, 43, 43, 0.1); /* --dark with low transparency */
+
+  /* Shadow and depth */
+  --color-primer-shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  --color-scale-gray-1: #e5e5e5; /* --lightgray - scale reference */
+  --color-scale-blue-1: #faf9f7; /* --light - scale reference */
+
+  /* Social reactions - Balanced theme */
+  --color-social-reaction-bg-hover: rgba(107, 124, 147, 0.1); /* --secondary with transparency */
+  --color-social-reaction-bg-reacted-hover: rgba(107, 124, 147, 0.2); /* --secondary with more transparency */
 }
 
+/* Enhanced styling for professional light theme */
+main {
+  /* Add subtle gradient backgrounds for depth */
+  background: linear-gradient(135deg, #faf9f7 0%, #f5f5f3 100%);
+  
+  /* Enhanced shadows for depth */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1), 
+              0 0 0 1px rgba(212, 175, 55, 0.1);
+  
+  /* Smooth transitions for all interactive elements */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Professional styling for comment areas */
+main .gsc-comment-box {
+  background: linear-gradient(135deg, #faf9f7 0%, #e5e5e5 100%);
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), 
+              inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Enhanced button styling with professional effects */
+main .gsc-button {
+  background: linear-gradient(135deg, #faf9f7 0%, #e5e5e5 100%);
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+main .gsc-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(107, 124, 147, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+main .gsc-button:hover::before {
+  left: 100%;
+}
+
+main .gsc-button:hover {
+  border-color: #6b7c93;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Primary button enhanced styling */
+main .gsc-button-primary {
+  background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+  border: 1px solid #d4af37;
+  color: #2b2b2b;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+}
+
+main .gsc-button-primary:hover {
+  background: linear-gradient(135deg, #b8941f 0%, #d4af37 100%);
+  box-shadow: 0 6px 16px rgba(212, 175, 55, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Comment styling with professional aesthetics */
+main .gsc-comment {
+  background: linear-gradient(135deg, #faf9f7 0%, #f5f5f3 100%);
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  margin: 8px 0;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+main .gsc-comment:hover {
+  border-color: #6b7c93;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Username styling with professional look */
+main .gsc-username {
+  color: #d4af37;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Timestamp styling */
+main .gsc-timestamp {
+  color: #6b7c93;
+  font-size: 0.9em;
+}
+
+/* Reaction buttons with professional styling */
+main .gsc-reaction-button {
+  background: rgba(107, 124, 147, 0.1);
+  border: 1px solid rgba(107, 124, 147, 0.3);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+main .gsc-reaction-button:hover {
+  background: rgba(107, 124, 147, 0.2);
+  border-color: #6b7c93;
+  transform: scale(1.05);
+}
+
+/* Input field styling */
+main .gsc-input {
+  background: linear-gradient(135deg, #faf9f7 0%, #e5e5e5 100%);
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  color: #2b2b2b;
+  transition: all 0.3s ease;
+}
+
+main .gsc-input:focus {
+  border-color: #6b7c93;
+  box-shadow: 0 0 0 2px rgba(107, 124, 147, 0.2);
+  outline: none;
+}
+
+/* Loading animations */
 main .pagination-loader-container {
   background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 main .gsc-loading-image {
   background-image: url("https://github.githubassets.com/images/mona-loading-default.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Scrollbar styling for professional look */
+main ::-webkit-scrollbar {
+  width: 8px;
+}
+
+main ::-webkit-scrollbar-track {
+  background: #faf9f7;
+  border-radius: 4px;
+}
+
+main ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #6b7c93 0%, #b8b8b8 100%);
+  border-radius: 4px;
+  border: 1px solid #faf9f7;
+}
+
+main ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #b8b8b8 0%, #6b7c93 100%);
+}
+
+/* Selection styling */
+main ::selection {
+  background: rgba(107, 124, 147, 0.3);
+  color: #2b2b2b;
+}
+
+main ::-moz-selection {
+  background: rgba(107, 124, 147, 0.3);
+  color: #2b2b2b;
 }
