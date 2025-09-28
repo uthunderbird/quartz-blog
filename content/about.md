@@ -1,6 +1,7 @@
 ---
 title: "Обо мне"
 description: "Узнайте больше об авторе"
+comments: false
 ---
 
 # Обо мне
